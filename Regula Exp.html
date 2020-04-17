@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate()
+            {
+                var username = document.getElementById('uname').value;
+                //var regx = /E00/i;
+                var regx = /[a-x]0[1-6]/i;
+                var regx = /[^1abc]abc/i;
+                //regx = new RegExp("E00",i)
+                if(regx.test(username))
+                {
+                    alert('valid username');
+
+                }
+                else
+                {
+                    alert('invalid username');
+                    document.getElementById("Ibluster").style.visibility="visible"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="error message.html">
+            <input id ="uname" placeholder="Username" type="text">
+            <label id ="Ibluster" style="color:red; visibility:hidden;">Invalid </label>
+            <br>
+
+            <button onclick="validate()" type="button">SUBMIT</button>
+        </form>
+    
+    </body>
+</html>

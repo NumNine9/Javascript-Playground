@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate()
+            {
+                var text= document.getElementById('text1').value;
+                var regx = /^([a-zA-Z0-9\.~]+)@([a-zA-Z0-9\~]+).([a-z]{2,20})(.[a-z]{2,8})?$/;
+                if (regx.test(text))
+                {
+                    document.getElementById('Ibluster').innerHTML='Valid';
+                    document.getElementById('Ibluster').style.visibility='visible';
+                    document.getElementById('Ibluster').style.color='green';
+                }
+                else
+                {
+                    document.getElementById('Ibluster').innerHTML='invalid';
+                    document.getElementById('Ibluster').style.visibility='visible';
+                    document.getElementById('Ibluster').style.color='red';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="error message.html">
+            <input id ="text1" placeholder="Email" type="text">
+            <label id ="Ibluster" style="color:red; visibility:hidden;">Invalid </label>
+            <br>
+
+            <button onclick="validate()" type="button">SUBMIT</button>
+        </form>
+        <img src="11.pjg" width="100" height="100">
+    </body>
+</html>

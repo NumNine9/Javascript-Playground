@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function addValue()
+            {
+                var a= document.getElementById('t1').value;
+                var b= document.getElementById('t2').value;  
+                document.getElementById('op').innerHTML="Result ="+(a+b);  
+                //console.log(a+b);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input id ="t1" placeholder="Text 1" type="text"><br><br>
+        <input id ="t2" placeholder="Text 2" type="text"><br><br>
+        <label id ="Ibluster" style="color:red; visibility:hidden;">Invalid </label>
+        <br>
+
+        <button onclick="addValue()" id="btnAdd" type="button">ADD</button>
+        <h2 id="op">Result = </h2>
+    </body>
+</html>

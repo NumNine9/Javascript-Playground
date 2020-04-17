@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function Validate()
+            {
+                var username=document.getElementById("uname");
+
+                var password=document.getElementById("pass");
+                if(password.value.trim()=="")
+                {
+                    alert('No blanks allowed');
+                    username.style.border = "solid 3px red";
+                    document.getElementById("Ibluster").style.visibility="visible";
+                    return false;
+                }
+                else if(username.value.trim().length<5)
+                {
+                    alert('Password is too short');
+                    return false
+                }
+                {
+                    true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return Validate()" action="error message.html">
+            <input id ="uname" placeholder="Username" type="text">
+            <label id ="Ibluster" style="color:red; visibility:hidden;">Invalid </label>
+            <br><br>
+
+            <input id ="pass" placeholder="Password" type="password"><br><br>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    
+    </body>
+</html>

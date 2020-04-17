@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function changeStyling()
+            {
+                var para = document.getElementsByTagName('p')
+                for(var i=0;i<para.length;i++)
+                {
+                    para[i].style.color = 'gold'
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <p>PARAGRAPH 1 </p>
+        <p>PARAGRAPH 2 </p>
+        <p>PARAGRAPH 3 </p>
+        <p>PARAGRAPH 4 </p>
+        <p>PARAGRAPH 5 </p>
+        <button onclick="changeStyling()">Change to gold</button>
+    </body>
+</html>

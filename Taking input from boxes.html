@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function fn1()
+            {
+                var select = document.getElementById("select box");
+                alert(select.options[select.selectedIndex].value);
+            }
+
+        </script>
+    </head>
+    <body>
+        <select id="select box">
+            <option value="NUMBERS">Numbers</option>
+            <option value="COUNTRIES">Countries</option>
+            <option value="CITIES">Cities</option>
+
+        </select>
+        <br>
+        <button onclick="fn1()">Click me!</button>
+            
+    
+    </body>
+</html>

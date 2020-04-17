@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate()
+            {
+                var text= document.getElementById('text1').value;
+                var regx = /^[4-9][0-9]\d$/;
+                if (regx.test(text))
+                {
+                    document.getElementById('Ibluster').innerHTML='Valid';
+                    document.getElementById('Ibluster').style.visibility='visible';
+                    document.getElementById('Ibluster').style.color='green';
+                }
+                else
+                {
+                    document.getElementById('Ibluster').innerHTML='invalid';
+                    document.getElementById('Ibluster').style.visibility='visible';
+                    document.getElementById('Ibluster').style.color='red';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="error message.html">
+            <input id ="text1" placeholder="Number" type="number">
+            <label id ="Ibluster" style="color:red; visibility:hidden;">Invalid </label>
+            <br>
+
+            <button onclick="validate()" type="button">SUBMIT</button>
+        </form>
+        <h1>WELCOME</h1>
+    </body>
+</html>
